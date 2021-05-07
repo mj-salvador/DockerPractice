@@ -1,0 +1,16 @@
+version 0.2
+phases:
+	pre_build:
+	commands:
+	 - echo Restore started on `date`
+	 - dotnet restore HelloDocker/HelloDocker.csproj
+build:
+	 - echo Build started on `date`
+	 - dotnet publish -c release -o ./build_output HelloDocker/HelloDocker.csproj
+artifacts:
+	files:
+	 - HelloDocker/build_output/**/*
+	 - scripts/**/*
+	 - appspec.yml
+
+
