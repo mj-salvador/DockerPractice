@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5KvCeW/EkUS8BhgrqJLIuNU6C7TdDrCnbb8Hm0xi7MFBG65M3cvgw9uawoeuPwTN8DODQ42/kFE2wtiTPs6UUA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Marti\\source\\repos\\HelloDocker\\HelloDocker\\HelloDocker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marti\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
+  ],
+  "logs": []
+}
