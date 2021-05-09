@@ -4,10 +4,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-copy *.csproj ./
-RUN dotnet restore HelloDocker.csproj
+COPY ["HelloDocker.csproj", "hellodocker/"]
+RUN dotnet restore "hellodocker/HelloDocker.csproj"
 COPY . .
-WORKDIR "/src/"
+WORKDIR "/src/hellodocker"
 RUN dotnet build "HelloDocker.csproj" -c Release -o /app/build
 
 FROM build AS publish
